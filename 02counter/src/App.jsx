@@ -16,13 +16,18 @@ function App() {
 
   //ADD FUNCTION
   function addvalue(){
-    //counter++;
-    setCounter(counter+1)
+    if(counter<20){
+      setCounter(counter+1)
+    }
+    
   }
 
   //DECREASE FUNCTION
   function decvalue(){
-    setCounter(counter-1)
+    if(counter>0){
+      setCounter(counter-1)
+    }
+    
   }
   return (
     <>
@@ -30,7 +35,9 @@ function App() {
       <h2>counter value: {counter}</h2>
       <button onClick= {addvalue}>INCREASE VALUE</button>
       <br/>
+      <br/>
       <button onClick= {decvalue}>DECREASE VALUE</button>
+      <p>counter value is :{counter}</p>
     </>
   )
 }
