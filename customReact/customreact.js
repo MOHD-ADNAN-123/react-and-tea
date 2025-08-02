@@ -35,4 +35,5 @@ const reactElement = {
 
 const mainContainer =document.querySelector("#root")   //selecting container whose id is root
 
+//custom render
 customRender(reactElement, mainContainer)     // calling custom render function
