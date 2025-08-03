@@ -17,7 +17,15 @@ function App() {
   //ADD FUNCTION
   function addvalue(){
     if(counter<20){
-      setCounter(counter+1)
+      // //only increase 1 time as they are increasing the same counter 
+      // setCounter(counter+1)
+      // setCounter(counter+1)
+      // setCounter(counter+1)
+
+      //if you want to increase multiple times
+      setCounter((counter)=> counter+1);
+      setCounter((counter)=> counter+1);
+      setCounter((counter)=> counter+1); 
     }
     
   }
