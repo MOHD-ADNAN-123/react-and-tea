@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Animation(props){
-    console.log(props.username);
+    //console.log(props.username);
     
     return (
         <div className=" w-72 flex flex-col rounded-xl glass  min-h-72 mt-3 ">
