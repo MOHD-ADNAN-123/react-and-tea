@@ -28,7 +28,7 @@ function App() {
     }
 
     setPassword(pass)
-  },[length,numberAllowed,characterAllowed])
+  },[length,numberAllowed,characterAllowed])  //dependency array
 
 
   useEffect(()=>{
