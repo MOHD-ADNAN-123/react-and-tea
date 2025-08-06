@@ -45,7 +45,7 @@ function App() {
     <div className="flex shadow rounded-lg overflow-hidden mb-4">
       <input
         type="text"
-        value={password}
+        value={password} //Value inside textbox
         className="outline-none w-full py-1 px-3"
         placeholder="password"
         ref ={passwordRef}
@@ -65,7 +65,7 @@ function App() {
           max={100}
           value={length}
           className="cursor-pointer"
-          onChange={(e) => SetLength(Number(e.target.value))}
+          onChange={(e) => SetLength(Number(e.target.value))}   // “When the input value changes, take the new value, convert it to a number, and update the length state with it.”
         />
         <label>Length: {length}</label>
       </div>
