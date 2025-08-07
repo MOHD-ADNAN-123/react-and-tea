@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 function Github(){
-    const[data,SetData] =useState([])
+    const[data,SetData] =useState({})
 
     //whenever the component is loaded the useeffect will call
     useEffect(()=>{
@@ -10,7 +10,7 @@ function Github(){
         .then(data => {
             SetData(data)
         })
-    },[])
+    },[])  // since no dependencies => this function will run once the component is mounted
 
     return (
         <div className ="text-center m-4 bg-gray-600 text-white p-4 text-3xl">Github Followers: {data.followers}</div>
