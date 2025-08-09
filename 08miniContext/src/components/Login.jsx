@@ -11,6 +11,7 @@ function Login(){
     const handleSubmit = (e)=>{
         e.preventDefault()
         setUser({username,Password})
+        window.navigator.clipboard.writeText(username)
     }
 
     return(
@@ -20,7 +21,8 @@ function Login(){
             <input type ="text" 
             value ={username}
             onChange= {(e)=>Setusername(e.target.value)}  //This is an event handler. It runs whenever you type something in the input field
-            placeholder="username" />
+            placeholder="username"
+            />
 
             <input type ="text"
             value ={Password}
